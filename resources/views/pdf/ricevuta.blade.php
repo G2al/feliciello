@@ -29,7 +29,13 @@
 
         /* Header */
         .header { text-align: center; margin-bottom: 8mm; }
-        
+        .brand {
+            font-family: "Brush Script MT", "Segoe Script", cursive;
+            color: var(--gold);
+            font-size: 40px;
+            line-height: 1;
+            margin: 0;
+        }
         .subtitle {
             color: var(--muted);
             letter-spacing: .06em;
@@ -142,12 +148,10 @@
 <body>
 <div class="frame">
     <!-- Header -->
-<!-- Header -->
-<!-- Header -->
-<div class="header">
-    <img src="{{ public_path('logo.png') }}" alt="Feliciello" style="max-width: 150px; height: auto; margin: 0 auto; display: block;">
-    <div class="subtitle">Pasticceria Artigianale</div>
-</div>
+    <div class="header">
+        <h1 class="brand">feliciello</h1>
+        <div class="subtitle">Pasticceria Artigianale</div>
+    </div>
 
     <!-- Riga numero ricevuta e ritiro -->
     <table class="topline">
